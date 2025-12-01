@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jenish - Developer & Designer</title>
+    <link rel="stylesheet" href="styless.css" />
+  </head>
+  <body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <nav class="navbar">
+      <span class="logo">JENISH</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        id="menu-button"
+      >
+        ☰
+      </button>
+    </nav>
+
+    <!-- Hero Section with Video Background -->
+    <header id="hero">
+      <video autoplay loop muted playsinline id="">
+        <source src="video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="hero-content">
+        <h1>Jenish's Portfolio</h1>
+        <p>DEVELOPER • DESIGNER • LEARNER</p>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="about-content">
+        <img src="profile.jpg" alt="Profile Photo" class="profile-image" />
+        <div>
+          <h2>About Me</h2>
+          <p>
+            Hi, I'm Jenish a designer who loves clean lines, smart code, and
+            minimal magic. I'm learning HTML, CSS, Git, and web dev while
+            crafting sleek interfaces in Figma, Affinity, Illustrator, and
+            InDesign. Simple. Purposeful. Creative.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill-item">
+          <h3>HTML & CSS</h3>
+          <p>Semantic markup</p>
+        </div>
+        <div class="skill-item">
+          <h3>JavaScript</h3>
+          <p>ES6+ & DOM</p>
+        </div>
+        <div class="skill-item">
+          <h3>Figma</h3>
+          <p>UI/UX Design</p>
+        </div>
+        <div class="skill-item">
+          <h3>Illustrator</h3>
+          <p>Vector graphics</p>
+        </div>
+        <div class="skill-item">
+          <h3>InDesign</h3>
+          <p>Layout design</p>
+        </div>
+        <div class="skill-item">
+          <h3>Git</h3>
+          <p>Version control</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div id="projects-grid">
+        <div class="project-card">
+          <img
+            src="portfolio.png.png"
+            alt="Website Project"
+            class="project-image"
+          />
+          <div class="project-content">
+            <h3>Website Design</h3>
+            <p>
+              My first website that I created using Figma. A clean, modern
+              design showcasing responsive layouts and user-friendly navigation.
+            </p>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="prototype.png.png"
+            alt="Prototyping Project"
+            class="project-image"
+          />
+          <div class="project-content">
+            <h3>Interactive Prototype</h3>
+            <p>
+              A project that I made using Figma with functional buttons to make
+              the project feel richer and more immersive.
+            </p>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="pho2.png" alt="Design System" class="project-image" />
+          <div class="project-content">
+            <h3>Design System</h3>
+            <p>
+              A comprehensive design system created in Figma featuring reusable
+              components and consistent styling guidelines.
+            </p>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+      <div id="form-message"></div>
+    </section>
+
+    <footer>
+      <p>© 2025 Jenish. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
